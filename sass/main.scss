@@ -1,0 +1,43 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    text-align: center; 
+}
+h1 {
+    font-family: 'Shrikhand', serif;
+    font-size: 48px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+.localisation {
+    background-color: #E1DADA;
+}
+.buttonexplore {
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 15px;
+}
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
