@@ -1,3 +1,9 @@
 @mixin Roboto {
     font-family: 'Roboto', sans-serif;
   }
+@mixin Fontsize {
+  font-size: 1rem;
+}
+@mixin Textcenter {
+  text-align: center;
+}
