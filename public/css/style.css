@@ -9,19 +9,134 @@ h1 {
   font-size: 48px;
 }
 
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
 }
 
+.fa-map-marker-alt {
+  margin: 0 15px;
+}
+
 .localisation {
-  background-color: #E1DADA;
+  border-top: solid;
+  font-weight: 500;
+  border-color: #e0dede;
+  background-color: #f2f2f2;
+  padding: 1px 1px 1px 1px;
 }
 
 .buttonexplore {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 15px;
+  border-radius: 50px;
+  padding: 25px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.sous-localisation {
+  margin: 0 0 30px;
+  padding: 20px;
+  background-color: #f9F7F7;
+}
+
+.sous-localisation-text {
+  color: #928b8b;
+}
+
+.fonction {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+.fonction ul {
+  list-style-type: none;
+}
+.fonction li {
+  padding: 0.5rem;
+  counter-increment: list;
+}
+.fonction li::before {
+  position: absolute;
+  content: counter(list);
+  color: white;
+  border: 2px solid #9356DC;
+  background-color: #9356DC;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 0.3rem 0.8rem;
+  margin: 55px 0 0 1px;
+}
+
+.button1 {
+  weight: 550px;
+  margin: 25px;
+  border-radius: 30px;
+  padding: 40px 120px 40px 20px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+.button1 .fa-mobile-alt {
+  color: #928b8b;
+  margin: 0 35px 0 35px;
+}
+
+.button2 {
+  weight: 550px;
+  margin: 25px;
+  border-radius: 30px;
+  padding: 40px 120px 40px 20px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+}
+.button2 .fa-list-ul {
+  color: #928b8b;
+  margin: 0 35px 0 35px;
+}
+
+.button3 {
+  weight: 550px;
+  margin: 25px;
+  border-radius: 30px;
+  padding: 40px 120px 40px 20px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+.button3 .fa-store {
+  color: #9356DC;
+  margin: 0 35px 0 35px;
+}
+
+.RestaurantsCardFigureImg {
+  height: 7rem;
+  object-fit: cover;
+  width: 50%;
+  height: 75%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.RestaurantsCardFigureImg2 {
+  height: 7rem;
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+  border-radius: 1rem 1rem 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
