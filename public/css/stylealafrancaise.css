@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.header .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: logo;
+  padding: 1rem 1rem 1rem;
+  height: 1.813rem;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Shrikhand", serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.RestaurantsTitle {
+  position: absolute;
+  margin: 320px 1px 2px 0;
+  border-radius: 50px;
+  width: 95%;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 0 0 20px;
+  background-color: #f6f6f6;
+}
+
+.fa-heart {
+  position: absolute;
+  margin: 10px 0 0 50px;
+  display: block;
+  overflow: hidden;
+}
+
+.fa-arrow-left {
+  text-decoration: none;
+  position: absolute;
+  color: black;
+  margin: 15px 0 0 30px;
+}
+
+.main {
+  display: grid;
+  row-gap: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 0;
+}
+
+.RestaurantsCard {
+  margin: 0;
+}
+
+.RestaurantsCardImg {
+  position: absolute;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 0 20px #0000002e;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+}
+
+.RestaurantsCardImg {
+  height: 22rem;
+  object-fit: cover;
+}
+
+.Restaurantsmenutitle {
+  position: absolute;
+  color: #9a9a9a;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+}
+
+.footer {
+  position: absolute;
+  margin: 2rem 0 0 0;
+  background-color: #353535;
+  color: white;
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  bottom: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.footercolumn {
+  margin: 0 0 0 25px;
+  width: 70%;
+  padding: 1rem 0;
+}
+
+.footercolumnlink {
+  display: block;
+  margin: 1%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.footercolumnlink .fa-utensils {
+  padding: 0 10px;
+}
+.footercolumnlink .fa-hands-helping {
+  padding: 0 7px;
+}
+
+.footercolumnlink2 {
+  display: block;
+  margin: 1% 0 0 3%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 50;
+}
+
+.footercolumntitle {
+  font-family: "Shrikhand", serif;
+  font-weight: 200;
+  margin: 10px 0 15px 10px;
+}
+
+/*# sourceMappingURL=stylealafrancaise.css.map */
