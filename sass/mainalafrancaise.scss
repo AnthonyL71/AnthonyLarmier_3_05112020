@@ -43,20 +43,21 @@ h2 {
     font-weight: 800;
     font-size: 30px;
 }
-.RestaurantsTitle {
-    position: absolute;
-    margin: 320px 1px 2px 0;
-    border-radius: 50px;
-    width: 95%;
-    border: none;
+h5 {
     @include Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 0 0 20px;
-    background-color: #f6f6f6;
+    font-weight: 800;
+    padding: 0;
+    margin: 5px;
 }
+h6 {
+    @include Roboto;
+    font-weight: 80;
+    padding: 0;
+    margin: 5px 0 0 5px;
+}
+
 .fa-heart{
-    position: absolute;
+    position: relative;
     margin: 10px 0 0 50px;
     display: block;
     overflow: hidden;
@@ -77,16 +78,30 @@ h2 {
     padding: 0;
 }
 .RestaurantsCard {
-    margin: 0;
+    position: relative;
+    margin: 0px 0 0 0;
+}
+.RestaurantsTitle {
+    position: relative;
+    display: grid;
+    margin-top:350px;
+    margin: 0px 0px 2px 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 95%;
+    @include Roboto;
+    font-size: 16px;
+    font-weight: 0;
+    padding: 0 10px 0 10px;
+    background-color: #f6f6f6;
 }
 .RestaurantsCardImg {
-    position: absolute;
+    position: relative;
     margin:0;
     max-width:100%;
     max-height:100%;
-    box-shadow: 0 0 20px #0000002e;
     overflow: hidden;
-    display: flex;
+    display: grid;
     flex-direction: column;
     padding: auto;
   }
@@ -96,14 +111,143 @@ h2 {
     object-fit:cover;
 }
 .Restaurantsmenutitle {
-    position: absolute;
+    position: relative;
     color: #9a9a9a;
-    margin: 15px 0 0 0;
+    margin: 15px 0 0 15px;
     text-transform: uppercase;
 }
+.RestaurantsCard .RestaurantsTitle .Restaurantsmenutitle .surligne
+{
+    border-bottom: 1px solid #99E2D0;
+    border-bottom-width: 4px;
+}
+
+menu .choice p{
+    text-overflow:ellipsis;
+}
+.menu .choice p:nth-child(1){
+    grid-area:text1;
+    font-weight:700;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.menu .menu-card{
+    cursor:pointer;
+    background-color:#fff;
+    position:relative;
+    border-radius:12px;
+    box-shadow:2px 3px 10px rgba(0,0,0,.1);
+    margin:20px 0;
+    display:flex
+}
+.menu .choice{
+    width:100%;
+    padding:0 10px;
+    display:grid;
+    grid-template-rows:30px;
+    grid-template-columns:auto auto;
+    grid-template-areas:"text1 ." "text2 price"
+}
+
+.menu {
+    h4 {
+        font-weight: 200;
+        &::after {
+            display: block;
+            content: "";
+            height: 3px;
+            width: 30px;
+           background: #99e2d0;
+        }
+    }
+  .menu-card {
+        cursor: pointer;
+        background-color: white;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: 2px 3px 10px rgba(0,0,0,0.1);
+        margin: 20px 0;
+        display: flex;
+    &:hover .check {
+        width: 90%;
+      > .fa-check-circle {
+        opacity: 1;
+        animation: rotation 1s linear;
+      }
+    }
+    
+    
+  }
+    .choice {
+        width: 95%;
+        padding: 0 10px;
+        display: grid;
+        grid-template-rows: 30px;
+        grid-template-columns: auto auto;
+        text-overflow: ellipsis;
+        grid-template-areas: 
+        "text1 ."
+        "text2 price";
+        p {
+            display: block;
+            white-space: nowrap;
+            &:nth-child(1) {
+                grid-area: text1;
+                display: flex;
+                font-weight: 700;
+                justify-content: flex-start;
+            }
+            &:nth-child(2) {
+                grid-area: text2;
+                display: flex;
+                font-weight: 200;
+                justify-content: flex-start;
+            }
+            &:nth-child(3) {
+                grid-area: price;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.check {
+  transition: width 1s linear;
+   width: 0;
+    right: 0;
+    background-color: #99E2D0;
+    color: white;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    justify-content: center;
+    transform-origin: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-check-circle {
+       opacity: 0;
+    }
+}
+
+
+@keyframes rotation {
+    from {
+        z-index:1;
+        transform: rotate(0);
+    } 50% {
+        transform: rotate(180deg);
+    } to {
+      z-index:1;
+        transform: rotate(360deg);
+    }
+}
+
+
 .footer
 {
-    position: absolute;
+    position: relative;
     margin:2rem 0 0 0;
     background-color: #353535;
     color: white;
