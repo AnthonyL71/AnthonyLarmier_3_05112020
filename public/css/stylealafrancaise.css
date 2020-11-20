@@ -41,7 +41,7 @@ h6 {
 
 .fa-heart {
   position: relative;
-  margin: 10px 0 0 50px;
+  margin: 10px 0 0 40px;
   display: block;
   overflow: hidden;
 }
@@ -69,10 +69,11 @@ h6 {
 }
 
 .RestaurantsTitle {
-  position: relative;
+  position: absolute;
   display: grid;
-  margin-top: 350px;
-  margin: 0px 0px 2px 0;
+  margin-top: 10px;
+  margin: 0px 0px 0px 0;
+  top: 18%;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   width: 95%;
@@ -83,8 +84,19 @@ h6 {
   background-color: #f6f6f6;
 }
 
-.RestaurantsCardImg {
+.Restaurantsmenu {
   position: relative;
+  display: grid;
+  margin: 0px 0px 2px 0;
+  width: 95%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 0;
+  padding: 0 10px 0 10px;
+  background-color: #f6f6f6;
+}
+
+.RestaurantsCardImg {
   margin: 0;
   max-width: 100%;
   max-height: 100%;
@@ -118,8 +130,6 @@ menu .choice p {
 .menu .choice p:nth-child(1) {
   grid-area: text1;
   font-weight: 700;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .menu .menu-card {
@@ -158,9 +168,9 @@ menu .choice p {
   border-radius: 12px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
-  display: flex;
 }
 .menu .menu-card:hover .check {
+  position: sticky;
   width: 90%;
 }
 .menu .menu-card:hover .check > .fa-check-circle {
@@ -173,24 +183,28 @@ menu .choice p {
   display: grid;
   grid-template-rows: 30px;
   grid-template-columns: auto auto;
-  text-overflow: ellipsis;
   grid-template-areas: "text1 ." "text2 price";
 }
 .menu .choice p {
   display: block;
-  white-space: nowrap;
 }
 .menu .choice p:nth-child(1) {
   grid-area: text1;
   display: flex;
   font-weight: 700;
   justify-content: flex-start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 140px;
 }
 .menu .choice p:nth-child(2) {
   grid-area: text2;
   display: flex;
   font-weight: 200;
   justify-content: flex-start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 140px;
 }
 .menu .choice p:nth-child(3) {
   grid-area: price;
