@@ -46,6 +46,10 @@ p {
     @include Roboto;
     font-size: 25px;
 }
+a {
+    text-decoration:none; 
+    color: black;
+}
 .fa-map-marker-alt {
     margin: 0 15px;
 }
@@ -214,7 +218,9 @@ p {
 }
   .fa-heart:hover {
     position: absolute;
-    color:#9356DC;
+    background: -webkit-gradient(linear, right top, right bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity:1;
   }
 .RestaurantsCardLove2 {

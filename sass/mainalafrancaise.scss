@@ -82,28 +82,26 @@ h6 {
     margin: 0px 0 0 0;
 }
 .RestaurantsTitle {
-    position: relative;
+    position: absolute;
     display: grid;
-    margin-top:350px;
-    margin: 0px 0px 2px 0;
+    margin-top: 250px;
+    top: 18%;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     width: 95%;
-    @include Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 0;
     padding: 0 10px 0 10px;
     background-color: #f6f6f6;
 }
 .RestaurantsCardImg {
-    position: relative;
-    margin:0;
-    max-width:100%;
-    max-height:100%;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
     display: grid;
     flex-direction: column;
-    padding: auto;
   }
   .RestaurantsCardImg
 {
@@ -244,17 +242,33 @@ menu .choice p{
     }
 }
 
+.buttoncommander {
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 50px;
+    padding: 20px;
+    width: 235px;
+    border: none;
+    margin-top: 20px;
+    @include Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    @include Textcenter;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .footer
 {
-    position: relative;
+    position: absolute;
     margin:2rem 0 0 0;
     background-color: #353535;
     color: white;
     width:100%;
     display: flex;
     max-width: 100%;
-    bottom:0;
+    top:1750px;
     margin: auto;
     box-sizing: border-box;
 }
