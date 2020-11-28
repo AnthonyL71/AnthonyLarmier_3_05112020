@@ -53,8 +53,74 @@ a {
 .fa-map-marker-alt {
     margin: 0 15px;
 }
+@media screen and (min-width: 900px)
+{
+    .localisation {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: solid;
+        max-width:600px;
+        font-weight: 500;
+        border-color: #e0dede;
+        background-color: #EAEAEA;
+        padding: 1px 1px 1px 1px;
+        @include Textcenter;
+    }
+    .sous-localisation {
+        position: relative;
+        font-size: 21px;
+        width:600px;
+        background-color: #F6F6F6;
+        @include Textcenter;
+        left: 650px;
+        }
+    .fonction h2{
+        margin-top: 2px;
+        margin-left: 700px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .fonction ul {
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:600px;
+    }
+    .Restaurants {
+        display:grid;
+        max-width:600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #F6F6F6;
+        padding: 0 0 45px;
+    }
+    .RestaurantsCardLove .fa-heart{
+        position: absolute;
+        margin: 1px 0 0 290px;
+        display: block;
+        overflow: hidden;
+        transition: all 450ms;
+        opacity:1.0;
+    }
+    .footer
+{
+    position: absolute;
+    background-color: red;
+    color: white;
+    max-width:600px;
+    display: grid;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 650px;
+}
+    .footercolumn {
+        position: alternative;
+        display: grid;
+        object-fit:contain; 
+    }
+}
 .localisation {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     border-top: solid;
@@ -77,6 +143,7 @@ a {
     @include Textcenter;
 }
 .sous-localisation {
+    display: block;
     margin: 0 0 30px;
     padding: 15px 0 40px;
     font-size: 21px;
@@ -179,8 +246,8 @@ a {
 .Restaurants {
     display:grid;
     row-gap:1rem;
-    max-width:100%;
-    max-height:100%;
+    width:100%;
+    height:100%;
     align-items:center;
     background-color: #F6F6F6;
     padding: 0 0 45px;
@@ -219,8 +286,8 @@ a {
   .fa-heart:hover {
     position: absolute;
     background: -webkit-gradient(linear, right top, right bottom, from(#9356DC), to(#FF79DA));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
     opacity:1;
   }
 .RestaurantsCardLove2 {
@@ -262,24 +329,23 @@ a {
     @include Roboto;
     font-weight:bolder;
     }
-.footer
-{
-    margin:2rem 0 0 0;
-    background-color: #353535;
-    color: white;
-    width:100%;
-    display: flex;
-    max-width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.footercolumn
-{
-    margin: 0 0 0 25px;
-    width:70%;
-    padding:1rem 0;
-}
+    .footer
+    {
+        position: absolute;
+        background-color: #353535;
+        color: white;
+        width:100%;
+        display: flex;
+        top:2370px;
+        box-sizing: border-box;
+    }
+    
+    .footercolumn
+    {
+        margin: 0 0 0 25px;
+        width:70%;
+        padding:1rem 0;
+    }
 .footercolumnlink
 {
     display:block;

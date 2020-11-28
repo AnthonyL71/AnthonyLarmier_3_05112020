@@ -58,7 +58,8 @@ h6 {
 
 .fa-heart{ 
     position: relative;
-    margin: 10px 0 0 50px;
+    margin-top: 12px;
+    margin-right: 1px;
     display: block;
     overflow: hidden;
 }
@@ -107,6 +108,75 @@ h6 {
 {
     height:22rem;
     object-fit:cover;
+}
+@media screen and (min-width: 900px)
+{
+    .fa-arrow-left {
+        text-decoration:none;
+        position: absolute;
+        color: black;
+        margin: 15px 0 0 745px;
+    }
+    .RestaurantsCard {
+        display:block;   
+    }
+    .RestaurantsCardImg {
+        position: alternative;
+        margin: 0;
+        display: grid;
+        max-width: 700px;
+        object-fit:contain;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .RestaurantsTitle {
+        position: relative;
+        display: grid;
+        align-items:start;
+        margin-top: 5px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        width: 600px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 0;
+        background-color: #f6f6f6;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .buttoncommander {
+        color: white;
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-radius: 50px;
+        padding: 20px;
+        width: 235px;
+        border: none;
+        margin-top: 20px;
+        @include Roboto;
+        font-size: 17px;
+        font-weight: 500;
+        @include Textcenter;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .footer
+{
+    position: absolute;
+    background-color: red;
+    color: white;
+    max-width:600px;
+    display: grid;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 650px;
+}
+    .footercolumn {
+        position: alternative;
+        display: grid;
+        object-fit:contain; 
+    }
 }
 .Restaurantsmenutitle {
     position: relative;
@@ -262,14 +332,11 @@ menu .choice p{
 .footer
 {
     position: absolute;
-    margin:2rem 0 0 0;
     background-color: #353535;
     color: white;
     width:100%;
     display: flex;
-    max-width: 100%;
     top:1750px;
-    margin: auto;
     box-sizing: border-box;
 }
 
