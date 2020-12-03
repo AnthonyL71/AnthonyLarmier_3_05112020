@@ -292,11 +292,7 @@ menu .choice p {
 .menu .choice {
   width: 95%;
   padding: 0 10px;
-  display: grid;
-  grid-template-rows: 30px;
-  grid-template-columns: auto auto;
   text-overflow: ellipsis;
-  grid-template-areas: "text1 ." "text2 price";
 }
 .menu .choice p {
   display: block;
