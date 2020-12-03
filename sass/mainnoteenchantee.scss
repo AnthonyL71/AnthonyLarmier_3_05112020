@@ -96,7 +96,7 @@ h6 {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 0;
-    padding: 0 10px 37px 10px;
+    padding: 0 10px 70px 10px;
     background-color: #f6f6f6;
 }
 .RestaurantsCardImg {
@@ -184,6 +184,7 @@ h6 {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    margin-top:0px!important;
 }
 .footercolumn
 {
@@ -238,15 +239,7 @@ menu .choice p{
     border-radius:12px;
     box-shadow:2px 3px 10px rgba(0,0,0,.1);
     margin:20px 0;
-    display:flex;
-}
-.menu .choice{
-    width:100%;
-    padding:0 10px;
-    display:grid;
-    grid-template-rows:30px;
-    grid-template-columns:auto auto;
-    grid-template-areas:"text1 ." "text2 price";
+    display:flex
 }
 
 .menu {
@@ -268,6 +261,15 @@ menu .choice p{
         transform: translateY(30%);
         opacity: 0;
     }
+}
+
+.menu .choice{
+    width:100%;
+    padding:0 10px;
+    display:grid;
+    grid-template-rows:30px;
+    grid-template-columns:auto auto;
+    grid-template-areas:"text1 ." "text2 price"
 }
 
 .menu {
@@ -395,6 +397,7 @@ menu .choice p{
     color: white;
     display:flex;
     width:100%;
+    margin-top: 90px;
     box-sizing: border-box;
 }
 

@@ -68,16 +68,17 @@ a {
         @include Textcenter;
     }
     .sous-localisation {
-        position: relative;
         font-size: 21px;
         width:600px;
         background-color: #F6F6F6;
         @include Textcenter;
-        left: 650px;
+        margin-left: auto;
+        margin-right: auto;
         }
     .fonction h2{
         margin-top: 2px;
-        margin-left: 700px;
+        margin-left: 40%;
+        margin-right: 40%;
         font-size: 17px;
         font-weight: 600;
     }
@@ -103,22 +104,27 @@ a {
         transition: all 450ms;
         opacity:1.0;
     }
+    .fa-heart{ 
+        position: -webkit-sticky;
+        position: sticky;
+        left: 35%;
+    }
     .footer
 {
-    position: absolute;
-    background-color: red;
     color: white;
     max-width:600px;
-    display: grid;
+    display:flex;
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-left: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
-    .footercolumn {
-        position: alternative;
-        display: grid;
-        object-fit:contain; 
-    }
+.footercolumn
+{
+    margin: 0 0 0 25px;
+    width:70%;
+    padding:1rem 0;
+    white-space:nowrap;
+}
 }
 .localisation {
     margin-left: auto;
@@ -130,9 +136,18 @@ a {
     padding: 1px 1px 1px 1px;
     @include Textcenter;
 }
+
+.buttonexplore:hover {
+    $rose: lighten(#FF79DA, 2%);
+    $violet: lighten(#9356DC, 2%);
+    background: linear-gradient($rose, $violet);
+    box-shadow: 0 0 20px #0000004e;
+    cursor:pointer;
+  }
+
 .buttonexplore {
     color: white;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient($rose, $violet);
     border-radius: 50px;
     padding: 20px;
     width: 235px;
@@ -141,14 +156,16 @@ a {
     font-size: 17px;
     font-weight: 500;
     @include Textcenter;
+    box-shadow: 0 0 20px #0000002e;
 }
 .sous-localisation {
-    display: block;
     margin: 0 0 30px;
     padding: 15px 0 40px;
     font-size: 21px;
     background-color: #F6F6F6;
     @include Textcenter;
+    margin-left: auto;
+    margin-right: auto;
 }
 .sous-localisation-text {
     color: #928b8b;
@@ -182,9 +199,11 @@ a {
     }
 }
 .fonctiontitle {
-    margin: 0 0 0 12px;
-    font-size: 17px;
-    font-weight: 600;
+    padding-left: 12px;
+    font-size: 18px;
+    @include Roboto;
+    font-weight: 800;
+    max-width: 90%;
 }
 .button1 {
     display: block;
@@ -204,6 +223,9 @@ a {
         margin: 0 12px 0 8px;
     }
 }
+.button1:hover, .button2:hover, .button3:hover {
+    cursor:pointer;
+  }
 .boutontext {
     margin: 0 0 0 20px;
 }
@@ -277,7 +299,7 @@ a {
 }
 .fa-heart{
     position: absolute;
-    margin: 32px 0 0 290px;
+    margin: 32px 0 0 310px;
     display: block;
     overflow: hidden;
     transition: all 450ms;
@@ -285,7 +307,7 @@ a {
 }
   .fa-heart:hover {
     position: absolute;
-    background: -webkit-gradient(linear, right top, right bottom, from(#9356DC), to(#FF79DA));
+    background: -webkit-gradient(linear, right top, right bottom, from($violet), to($rose));
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     opacity:1;
@@ -331,12 +353,10 @@ a {
     }
     .footer
     {
-        position: absolute;
         background-color: #353535;
         color: white;
+        display:flex;
         width:100%;
-        display: flex;
-        top:2370px;
         box-sizing: border-box;
     }
     
@@ -346,32 +366,33 @@ a {
         width:70%;
         padding:1rem 0;
     }
-.footercolumnlink
-{
-    display:block;
-    margin:1%;
-    color: white;
-    @include Roboto;
-    text-decoration:none;
-    .fa-utensils {
-        padding: 0 10px;
+    .footercolumnlink
+    {
+        display:block;
+        margin:1%;
+        color: white;
+        @include Roboto;
+        font-weight: 500;
+        text-decoration:none;
+        .fa-utensils {
+            padding: 0 10px;
+        }
+        .fa-hands-helping {
+            padding: 0 7px;
+        }
     }
-    .fa-hands-helping {
-        padding: 0 7px;
+    .footercolumnlink2
+    {
+        display:block;
+        margin:1% 0 0 3%;
+        color: white;
+        @include Roboto;
+        text-decoration:none;
+        font-weight: 50;
     }
-}
-.footercolumnlink2
-{
-    display:block;
-    margin:1% 0 0 3%;
-    color: white;
-    @include Roboto;
-    text-decoration:none;
-    font-weight: 50;
-}
-.footercolumntitle
-{
-    font-family: 'Shrikhand', serif;
-    font-weight: 200;
-    margin: 10px 0 15px 10px;
-}
+    .footercolumntitle
+    {
+        font-family: 'Shrikhand', serif;
+        font-weight: 200;
+        margin: 10px 0 15px 10px;
+    }

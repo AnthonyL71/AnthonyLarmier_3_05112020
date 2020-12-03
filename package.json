@@ -4,7 +4,7 @@
   "description": "",
   "main": "alafrancaise.js",
   "scripts": {
-    "sass": "sass --watch ./sass/mainalafrancaise.scss:./public/css/stylealafrancaise.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css ./sass/mainnoteenchantee.scss:./public/css/stylenoteenchantee.css ./sass/mainalafrancaise.scss:./public/css/stylealafrancaise.css"
   },
   "author": "",
   "license": "ISC"

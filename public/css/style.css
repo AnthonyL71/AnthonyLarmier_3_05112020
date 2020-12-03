@@ -53,17 +53,18 @@ a {
   }
 
   .sous-localisation {
-    position: relative;
     font-size: 21px;
     width: 600px;
     background-color: #F6F6F6;
     text-align: center;
-    left: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .fonction h2 {
     margin-top: 2px;
-    margin-left: 700px;
+    margin-left: 40%;
+    margin-right: 40%;
     font-size: 17px;
     font-weight: 600;
   }
@@ -93,21 +94,26 @@ a {
     opacity: 1;
   }
 
+  .fa-heart {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 35%;
+  }
+
   .footer {
-    position: absolute;
-    background-color: red;
     color: white;
     max-width: 600px;
-    display: grid;
+    display: flex;
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-left: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footercolumn {
-    position: alternative;
-    display: grid;
-    object-fit: contain;
+    margin: 0 0 0 25px;
+    width: 70%;
+    padding: 1rem 0;
+    white-space: nowrap;
   }
 }
 .localisation {
@@ -121,6 +127,12 @@ a {
   text-align: center;
 }
 
+.buttonexplore:hover {
+  background: linear-gradient(#ff83dd, #985ede);
+  box-shadow: 0 0 20px #0000004e;
+  cursor: pointer;
+}
+
 .buttonexplore {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -132,15 +144,17 @@ a {
   font-size: 17px;
   font-weight: 500;
   text-align: center;
+  box-shadow: 0 0 20px #0000002e;
 }
 
 .sous-localisation {
-  display: block;
   margin: 0 0 30px;
   padding: 15px 0 40px;
   font-size: 21px;
   background-color: #F6F6F6;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sous-localisation-text {
@@ -177,9 +191,11 @@ a {
 }
 
 .fonctiontitle {
-  margin: 0 0 0 12px;
-  font-size: 17px;
-  font-weight: 600;
+  padding-left: 12px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  max-width: 90%;
 }
 
 .button1 {
@@ -199,6 +215,10 @@ a {
 .button1 .fa-mobile-alt {
   color: #928b8b;
   margin: 0 12px 0 8px;
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+  cursor: pointer;
 }
 
 .boutontext {
@@ -280,7 +300,7 @@ a {
 
 .fa-heart {
   position: absolute;
-  margin: 32px 0 0 290px;
+  margin: 32px 0 0 310px;
   display: block;
   overflow: hidden;
   transition: all 450ms;
@@ -337,12 +357,10 @@ a {
 }
 
 .footer {
-  position: absolute;
   background-color: #353535;
   color: white;
-  width: 100%;
   display: flex;
-  top: 2370px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -357,6 +375,7 @@ a {
   margin: 1%;
   color: white;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
   text-decoration: none;
 }
 .footercolumnlink .fa-utensils {

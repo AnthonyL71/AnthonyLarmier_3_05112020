@@ -84,7 +84,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 0;
-  padding: 0 10px 37px 10px;
+  padding: 0 10px 70px 10px;
   background-color: #f6f6f6;
 }
 
@@ -179,6 +179,7 @@ h6 {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px !important;
   }
 
   .footercolumn {
@@ -236,15 +237,6 @@ menu .choice p {
   display: flex;
 }
 
-.menu .choice {
-  width: 100%;
-  padding: 0 10px;
-  display: grid;
-  grid-template-rows: 30px;
-  grid-template-columns: auto auto;
-  grid-template-areas: "text1 ." "text2 price";
-}
-
 .menu .menu-card {
   animation: progress-menu 2s;
 }
@@ -263,6 +255,15 @@ menu .choice p {
     opacity: 0;
   }
 }
+.menu .choice {
+  width: 100%;
+  padding: 0 10px;
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-columns: auto auto;
+  grid-template-areas: "text1 ." "text2 price";
+}
+
 .menu h4 {
   font-weight: 200;
 }
@@ -380,6 +381,7 @@ menu .choice p {
   color: white;
   display: flex;
   width: 100%;
+  margin-top: 90px;
   box-sizing: border-box;
 }
 
@@ -419,4 +421,4 @@ menu .choice p {
   margin: 10px 0 15px 10px;
 }
 
-/*# sourceMappingURL=stylealafrancaise.css.map */
+/*# sourceMappingURL=stylenoteenchantee.css.map */
