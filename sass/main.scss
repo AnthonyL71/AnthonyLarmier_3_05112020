@@ -27,8 +27,8 @@
 }
 #loading {
     position: absolute;
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); 
     width: 300px;
     height: 300px;
     -webkit-border-radius: 150px;
@@ -174,13 +174,13 @@ a {
         margin-left: auto;
         margin-right: auto;
         }
-    .fonction h2{
-        margin-top: 2px;
-        margin-left: 40%;
-        margin-right: 40%;
-        font-size: 17px;
-        font-weight: 600;
-    }
+        .fonctiontitle {
+            margin: 0 auto;
+            padding-left: 12px;
+            font-size: 18px;
+            @include Roboto;
+            font-weight: 800;
+        }
     .fonction ul {
         margin-bottom: 5px;
         margin-left: auto;
@@ -302,7 +302,7 @@ a {
     font-size: 18px;
     @include Roboto;
     font-weight: 800;
-    max-width: 90%;
+    max-width: 100%;
 }
 .button1 {
     display: block;
