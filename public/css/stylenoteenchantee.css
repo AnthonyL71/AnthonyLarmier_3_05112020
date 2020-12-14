@@ -108,7 +108,7 @@ h6 {
     position: -webkit-sticky;
     position: sticky;
     margin-top: 12px;
-    left: 80%;
+    left: 75%;
     display: block;
     overflow: hidden;
   }
@@ -204,7 +204,7 @@ h6 {
   .fa-heart {
     position: relative;
     margin-top: 12px;
-    left: 130px;
+    left: 160px;
     display: block;
     overflow: hidden;
   }
@@ -293,6 +293,10 @@ h6 {
   .footer {
     position: absolute;
     top: 1980px;
+  }
+
+  .RestaurantsTitle h2 {
+    margin-left: 15px;
   }
 
   .fa-heart {

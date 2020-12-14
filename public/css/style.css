@@ -218,6 +218,28 @@ a {
     white-space: nowrap;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 1400px) {
+  .fonctiontitle {
+    margin: 0 auto;
+    padding-left: 12px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+  }
+
+  .fonction ul {
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+
+  .fa-heart {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 35%;
+  }
+}
 .localisation {
   margin-left: auto;
   margin-right: auto;
@@ -358,7 +380,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  background-color: #F6F6F6;
+  background-color: #f5edff;
 }
 .button3 .fa-store {
   color: #9356DC;
@@ -394,8 +416,9 @@ a {
   cursor: pointer;
 }
 
-.RestaurantsCardFigureImg {
+a .RestaurantsCardFigureImg {
   height: 11rem;
+  width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
@@ -429,6 +452,7 @@ a {
 
 .RestaurantsCardFigureImg2 {
   height: 11rem;
+  width: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
