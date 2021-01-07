@@ -27,7 +27,6 @@ h2 {
   font-family: "Shrikhand", serif;
   font-weight: 800;
   font-size: 30px;
-  width: 95%;
 }
 
 h5 {
@@ -57,16 +56,6 @@ h6 {
   position: absolute;
   color: black;
   margin: 15px 0 0 30px;
-}
-
-.main {
-  display: grid;
-  row-gap: 1rem;
-  max-width: 100%;
-  max-height: 100%;
-  align-items: center;
-  background-color: #F6F6F6;
-  padding: 0;
 }
 
 .RestaurantsCard {
@@ -108,7 +97,7 @@ h6 {
     position: -webkit-sticky;
     position: sticky;
     margin-top: 12px;
-    left: 72%;
+    left: 80%;
     display: block;
     overflow: hidden;
   }
@@ -209,6 +198,10 @@ h6 {
     overflow: hidden;
   }
 
+  .RestaurantsTitle h2 {
+    margin-left: 30px;
+  }
+
   .fa-arrow-left {
     position: -webkit-sticky;
     width: 5px;
@@ -245,12 +238,12 @@ h6 {
     flex-direction: column;
   }
 
-  .RestaurantsTitle h2 {
-    margin-left: 30px;
-  }
-
   .carte__container {
     padding: 20px 0px 80px 12px !important;
+  }
+
+  .RestaurantsTitle h2 {
+    margin-left: 30px;
   }
 
   .buttoncommander {
@@ -292,7 +285,7 @@ h6 {
 @media screen and (max-width: 420px) {
   .footer {
     position: absolute;
-    top: 1980px;
+    top: 1855px;
   }
 
   .RestaurantsTitle h2 {
@@ -303,7 +296,7 @@ h6 {
     position: -webkit-sticky;
     position: sticky;
     margin-top: 12px;
-    left: 85%;
+    left: 83%;
     display: block;
     overflow: hidden;
   }
@@ -324,6 +317,16 @@ h6 {
   border-bottom-width: 4px;
 }
 
+.main {
+  display: grid;
+  row-gap: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 0;
+}
+
 .buttoncommander:hover {
   background: linear-gradient(#ff83dd, #985ede);
   box-shadow: 0 0 20px #0000004e;
@@ -337,7 +340,7 @@ h6 {
   padding: 20px;
   width: 235px;
   border: none;
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -482,8 +485,8 @@ h6 {
 
 .carte__container section ul li .carte-choice .carte-desc .choice-price {
   width: 15%;
-  margin: 0;
   font-family: "Roboto", sans-serif;
+  margin: 0;
   font-weight: 800;
 }
 
@@ -603,23 +606,6 @@ h4 {
     width: 20%;
   }
 }
-@keyframes loading-spinner {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  5% {
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
 @keyframes spinner-rotate {
   0% {
     transform: scale(1) rotate(0deg);
@@ -631,4 +617,4 @@ h4 {
   }
 }
 
-/*# sourceMappingURL=stylenoteenchantee.css.map */
+/*# sourceMappingURL=stylealafrancaise.css.map */

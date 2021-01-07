@@ -110,7 +110,7 @@ h6 {
         position: -webkit-sticky;
         position: sticky;
         margin-top: 12px;
-        left: 72%;
+        left: 80%;
         display: block;
         overflow: hidden;
     }
@@ -584,23 +584,6 @@ h6 {
   }
   to {
     width: 20%;
-  }
-}
-@keyframes loading-spinner {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  5% {
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
   }
 }
 @keyframes spinner-rotate {
