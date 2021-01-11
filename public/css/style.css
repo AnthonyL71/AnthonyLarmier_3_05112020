@@ -153,7 +153,7 @@ a {
     margin-right: auto;
   }
 
-  .fonctiontitle {
+  .fonction h2 {
     margin: 0 auto;
     padding-left: 12px;
     font-size: 18px;
@@ -209,7 +209,7 @@ a {
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1400px) {
-  .fonctiontitle {
+  .fonction h2 {
     margin: 0 auto;
     padding-left: 12px;
     font-size: 18px;
@@ -304,7 +304,7 @@ a {
   margin: 40px 0 0 1px;
 }
 
-.fonctiontitle {
+.fonction h2 {
   padding-left: 12px;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
